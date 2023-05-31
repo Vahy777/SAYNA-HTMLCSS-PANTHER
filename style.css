@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2? family= Cantarell:wght@300;400;500;600;700 & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Cantarell:ital,wght@0,400;0,700;1,400;1,700 & display=swap');
 
 @font-face {
     font-family: 'Beyno';
@@ -19,9 +19,17 @@
 
 @font-face {
     font-family: 'Cantarell';
-    src: url(../BLACK-PANTHER/Fonts/BEYNO/Cantarell-Regular.ttf);
+    src: url(../BLACK-PANTHER/Fonts/Cantarell-Regular.ttf);
 }
 
+
+p{
+    font-family: 'Cantarell';
+    font-size: 10px;
+    font-weight: 400;
+    text-align: justify;
+
+}
 :root{
     --white-color: #ffff;
     --pink-color:#f2cef2;
@@ -42,11 +50,25 @@
 .container {
     width: 85%;
    margin: 0 auto;
+   
+}
+
+h1{
+    font-family: 'Panthera';
+    font-size: 62px;
+    overflow: visible;
+}
+
+h2{
+    font-family: 'beyno';
+    color: #f2cef2;
+    font-weight: 100;
+    font-size: 20px;
 }
 
 
 body {
-
+    width: 85%;
     background: rgb(2,23,64);
     background: linear-gradient(90deg, rgb(1, 10, 27,0.9) 0%,  rgba(0,0,0,0.9) 35%,  rgba(2,23,64,0.8) 100%);
     color: white;
@@ -103,7 +125,7 @@ nav{
    nav ul
     {
        list-style-type: none;
-       margin-left:300px;
+        margin-right: 50px;
        display: inline-block;
        text-align: right;
     }
@@ -132,43 +154,112 @@ nav{
 /*section chadwick*/
 
 .description{
-    width: 30%;
- float: left;
+    width: 35%;
+ 
 }
 
-.king{
+#chadwick .container{
+    display: flex;
+}
+
+#chadwick img{
     width: 70%;
-    align-items: center;
+    margin-left: 10px;
     float: left;
 }
 
 /*section character*/
 
-#character .container{
+
+#character .container {
     width: 91%;
     background-color: #021740;
     height: 250px;
-   
-    margin-left: 120px
-}
-
-#character .container{
+    margin-left: 120px;
     display: flex;
+
 }
 
-.protagonist img{
+h3{
+    font-family: 'Beyno';
+    font-size: 16px;
+    font-weight: 300;
+    color: #f2cef2;
+}
+
+.okoye{
+    text-align: justify;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+.killmonger{
+    text-align: justify;
+    padding: 50px 30px;
+    overflow: hidden;
+}
+
+.break{
+    padding-top: 10px;
+    text-decoration: underline;
+    font-size: 11px;
+}
+
+.antagonist{
+    overflow-y: visible;
+    height: 320px;
     width: 100%;
+    object-fit: contain;
+    margin-top: -35px;
+    margin-left: 32px;
+}
+
+/*second section*/
+
+#main-character{
+    display: flex;
+   
+}
+
+.Texte{
+    width: 55%;
+    float: left;
+    margin-top: 160px;
+    margin-left: 90px;
+}
+
+.Bio{
+    width: 32%;
+    float: left;
+    height: 600px;
+    background-color: #fff;
+    position: relative;
+    margin-top: 250px;
+    left: 150px;
+    border-radius: 5px;
+}
+
+.Bio img{
+    width: 80%;
+   margin-left: 32px;
+   position: absolute;
+   top:-150px;
+}
+
+.biography{
+    position: absolute;
+    top: 200px;
+    justify-content: center;
+
 }
 
 
-
-
-
-
-
-
-
-
+.biography h2{
+    font-family: 'Cantarell';
+    text-align: center;
+    color: black;
+    font-weight: 700;
+}
 
 
 
