@@ -47,11 +47,14 @@ p{
     box-sizing: border-box;
 }
 
-.container {
-    width: 85%;
-   margin: 0 auto;
-   
-}
+@media screen and (min-width: 400px) {
+    .container {
+       width: 90%;
+       margin: 0 auto;
+       
+    }
+    }
+
 
 h1{
     font-family: 'Panthera';
@@ -68,13 +71,15 @@ h2{
 
 
 body {
-    width: 85%;
+    width: 90%;
+    background-size: contain;
     background: rgb(2,23,64);
-    background: linear-gradient(90deg, rgb(1, 10, 27,0.9) 0%,  rgba(0,0,0,0.9) 35%,  rgba(2,23,64,0.8) 100%);
+   background-image: url(../BLACK-PANTHER/Illustrations/Allpages/arrière_plan.png);
     color: white;
     font-family: 'Space Grotesk';
     opacity: 0.8;
     font-weight: 100;
+    box-sizing: border-box; 
 }
 
 /*border of the nav part*/
@@ -172,11 +177,12 @@ nav{
 
 
 #character .container {
-    width: 91%;
-    background-color: #021740;
+    min-width: 100%;
+    background-color: rgb(2, 23, 64);
     height: 250px;
-    margin-left: 120px;
     display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
 
 }
 
@@ -188,12 +194,14 @@ h3{
 }
 
 .okoye{
+    min-width: 25%;
     text-align: justify;
     padding: 50px 30px;
     overflow: hidden;
 }
 
 .killmonger{
+    min-width:25%;
     text-align: justify;
     padding: 50px 30px;
     overflow: hidden;
@@ -216,92 +224,163 @@ h3{
 
 /*second section*/
 
-#main-character{
+#main-character .container{
+    min-width: 100%;
+    height: 250px;
     display: flex;
-   
+    justify-content: center;
+  
 }
 
 .Texte{
-    width: 55%;
+    width: 65%;
     float: left;
     margin-top: 160px;
-    margin-left: 90px;
+    margin-left: 200px;
 }
 
 .Bio{
     width: 35%;
-    float: left;
-    height: 600px;
     background-color: #fff;
-    position: relative;
-    margin-top: 250px;
-    left: 150px;
+    height: 500px;
     border-radius: 5px;
+    margin-left: 100px;
+    margin-top: 25%;
+    position: relative;
 }
 
-.Bio img{
-   width: 80%;
-   margin-left: 32px;
-   position: absolute;
-   top:-150px;
-}
-
-.biography{
+.picture{
     position: absolute;
-    top: 200px;
-    justify-content: center;
-
+    width: 85%;
+    z-index: 2;
+    margin-top: -60%;
+    margin-left: 8%;
 }
 
-
-
-.biography h2{
-    font-family: 'Cantarell';
+h5{
+    margin-top: 60%;
+    color: #021740;
     text-align: center;
-    color: black;
-    font-weight: 700;
-    padding-left:calc(100px + 1.5625vw);
-    padding-top: 40px;
-    font-size: 18px;
-
+    font-size: 20px;
+    font-family: 'Cantarell';
 }
 
-.bouttons{
-    margin-top: 275px;
+.inside-buttons{
     display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-
+    justify-content:center;
 }
 
 button{
-
-    background-color: #3d2da6;
+    padding: 10px 12px;
+    font-size: 9px;
+    font-weight: 500;
+    margin-top: 5%;
+    margin-left: 3%;
+    background-color: var(--darkblue-color);
     border: none;
     border-radius: 3px;
-    color: #fff;
-    margin: 0 5px;
-    padding: 10px 20px;
-    font-family: 'Cantarell';
-    word-wrap: break-word;
+    color: var(--white-color);
+}
+
+.about{
+    width: 90%;
+    margin-top: 10%;
+    color: black;
+    text-align: center;
+    padding-left: 15%;
+    line-height: 20px;
+  
+}
+
+.about p{
+    font-size: 11px;
+}
+
+.about span{
     font-size: 8px;
-    
 }
 
 
+.illustrate img{
+    width: 100%;
+    margin-top: 30%;
+ 
+}
+
+/*Third section before the footer*/
 
 
+#Contact .container{
+    position: relative;
+    background-size: cover;
+    width: 111%;
+    height:650px;
+    margin-top: 70%;
+    background-image: url(Illustrations/Accueil/Pantherhome7.png);
+    background-repeat:no-repeat ;
+}
 
+.cta{
+    top: 25%;
+    left: 25%;
+    position: absolute;
+    width: 50%;
+    height: 450px;
+    background: linear-gradient(180deg,  rgba(255,255,255,1),  rgba(255,255,255,1),  rgba(255,255,255,.5),  rgba(255,255,255,.1)); 
+    border-radius: 150px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.cta h4{
+    padding-top: 8%;
+    color: #021740;
+    font-family: 'Cantarell';
+    font-weight: 300;
+    font-size: 12px;
 
+}
 
+.cta h2{
+    color: #021740;
+    font-family: 'Cantarell';
+    font-weight: 700;
+    font-size: 32px;
+    padding-top: 2%;
+}
 
+/* Style inputs with type="text", select elements and textareas */
 
+input[type=text], select, textarea {
+    width: 50%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    margin-top: 6px; 
+    margin-bottom: 16px; 
+    resize: none;
+  }
 
+.decor{
+    padding: 0 auto;
+    position: absolute;
+    background-color: linear-gradient(100deg,  rgba(2,15,42,0.5), rgba(0,0,0,.8) rgba(11, 38, 97, 0.5)); 
+    min-width: 100%;
+    height:300px;
+}
 
-
-
+footer{
+    margin-top: 10%;
+    background-size: cover;
+    min-width: 111%;
+    height:400px;
+    background-image: url(Illustrations/Allpages/back_footer.png);
+    background-repeat:no-repeat ;
+}
 
 
 
